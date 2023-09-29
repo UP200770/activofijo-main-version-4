@@ -1,11 +1,9 @@
 import React, { useRef, useEffect } from "react";
-import { Document, Page, pdfjs } from "react-pdf"; // Importa react-pdf
 import JsBarcode from "jsbarcode";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 
-// Configura react-pdf para trabajar con bibliotecas que no son de la comunidad
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
 
 const ProductLabel = ({ productCode, onClear }) => {
   const barcodeRef = useRef(null);
@@ -23,9 +21,9 @@ const ProductLabel = ({ productCode, onClear }) => {
   return (
     <div>
       <div className="border p-4 text-center d-flex flex-column align-items-center">
-        <div className="card ">
+        <div id="et" className="card ">
           <div className="card-body">
-            <div id="etiquetaVantec" className="d-flex flex-column align-items-center">
+            <div className="d-flex flex-column align-items-center">
               <p
                 style={{
                   fontSize: "12px",
