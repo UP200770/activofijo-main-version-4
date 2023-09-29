@@ -58,9 +58,7 @@ const ProductLabel = ({ productCode, onClear }) => {
           </div>
         </div>
       </div>
-      <button onClick={onClear} className="btn btn-danger m-3">
-        <i className="fa fa-trash"></i>
-      </button>
+
     </div>
   );
 };

@@ -6,6 +6,7 @@ import { Home } from './Home';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import TarjetasGeneradas from './components/TarjetasGeneradas';
 
+
 function App() {
   const [products, setProducts] = useState([]);
 
