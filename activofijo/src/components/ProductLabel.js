@@ -28,14 +28,14 @@ const ProductLabel = ({ productCode, onClear }) => {
                 style={{
                   fontSize: "13px",
                   fontWeight: "700",
-                  marginBottom: "-6px",
+                  marginBottom: "-4px",
                   marginTop:"15px",
                   padding: "1px",
                 }}
               >
                 {" "}
                 <img
-                  style={{ marginBottom: "-2px",  }}
+                  style={{ marginBottom: "-1px",  }}
                   src={require("./VANTEC.png")}
                   alt="2"
                   height={20}
