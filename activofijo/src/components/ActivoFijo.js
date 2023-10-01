@@ -18,7 +18,7 @@ function ActivoFijo({ products, onSaveProduct, onClearProducts, navigate, onClea
               <h2 className="card-title">Generador de Activos Fijos</h2>
               <ProductForm onSave={onSaveProduct} />
               <button onClick={handleOpenTarjetasGeneradas} className="btn btn-primary mt-4">
-                Abrir Tarjetas Generadas en una Nueva Página
+                Imprimir
               </button>
             </div>
           </div>

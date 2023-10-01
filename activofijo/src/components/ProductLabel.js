@@ -13,45 +13,51 @@ const ProductLabel = ({ productCode, onClear }) => {
       JsBarcode(barcodeRef.current, productCode, {
         format: "CODE128",
         displayValue: false,
-        height: 40,
+        height: 20,
       });
     }
   }, [productCode]);
 
   return (
     <div>
-      <div className="border p-4 text-center d-flex flex-column align-items-center">
-        <div id="et" className="card ">
-          <div className="card-body">
-            <div className="d-flex flex-column align-items-center">
+      <div className=" text-center align-items-center">
+        <div id="et" className="">
+          <div className="">
+            <div className="">
               <p
                 style={{
-                  fontSize: "12px",
-                  fontWeight: "500",
-                  marginBottom: "-11px",
+                  fontSize: "13px",
+                  fontWeight: "700",
+                  marginBottom: "-6px",
+                  marginTop:"15px",
                   padding: "1px",
                 }}
               >
                 {" "}
                 <img
-                  style={{ marginBottom: "6px" }}
+                  style={{ marginBottom: "-2px",  }}
                   src={require("./VANTEC.png")}
                   alt="2"
                   height={20}
                 ></img>
-                Vantec Logistics Mexico SA de CV{" "}
+                Vantec Logistics Mexico, SA de CV
               </p>
               <h2
                 style={{
-                  marginBottom: "-5px",
-                  fontSize: "27px",
+                  marginBottom: "-3px",
+                  fontSize: "24px",
                   letterSpacing: "1.4px",
                   fontWeight: "700",
                 }}
               >
                 {productCode}
               </h2>
-              <div>
+              <div style={{
+                  marginBottom: "3px",
+                  fontSize: "24px",
+                  letterSpacing: "1.4px",
+                  fontWeight: "700",
+                }} > 
                 <svg ref={barcodeRef} />
               </div>
             </div>

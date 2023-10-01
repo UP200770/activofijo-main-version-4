@@ -8,11 +8,11 @@ function TarjetasGeneradas({ products, onClearProduct }) {
     const content = document.getElementById('tarjetas-generadas-content'); // Obtén el contenido que deseas convertir en PDF
 
     const options = {
-      margin: 10,
-      filename: 'tarjetas-generadas.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { scale: 2 },
-      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+      margin: 1,
+      filename: 'Activos Fijos.pdf',
+      image: { type: 'text', quality: 0.98 },
+      html2canvas: { scale: 1 },
+      jsPDF: { unit: 'mm', format: [70, 30], orientation: 'landscape' },
     };
 
     html2pdf(content, options);
